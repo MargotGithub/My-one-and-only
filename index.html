@@ -18,6 +18,16 @@
 <body>
   <div class="container">
     <div class="weather-app">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-9">
+            <input id="city-input" class="form-control" type="search" autocomplete="off" placeholder="Type a city..">
+          </div>
+          <div class="col-3">
+            <input id="submit" type="submit" value="search" class="btn btn-primary w 100">
+          </div>
+        </div>
+      </form>
       <h1 id="city"></h1>
       <ul>
         <li id="date">Tuesday 22:50</li>
@@ -26,8 +36,9 @@
       <div class="row">
         <div class="col-6">
 
-          <strong id="temperature"></strong>°C | °F
-          <img src="src/sunny.png" alt="sunny" id="icon">
+          <strong id="temperature"></strong><span class="units"> <a id="celsius-link" href="#"> °C </a>| <a
+              id="fahrenheit-link" href="#"> °F</a></span>
+          <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" id="icon">
         </div>
         <div class="col-6">
           <ul>

@@ -4,6 +4,8 @@
   padding: 20px;
   border: 1px solid black;
   border-radius: 10px;
+  font-family: "Asap", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 h1 {
   color: blue;
@@ -15,4 +17,20 @@ li {
 }
 li:first-letter {
   text-transform: capitalize;
+}
+
+.units {
+  font-size: 15px;
+}
+
+#temperature {
+  font-size: 50px;
+}
+
+#celsius-link {
+  text-decoration: none;
+}
+
+#fahrenheit-link {
+  text-decoration: none;
 }
