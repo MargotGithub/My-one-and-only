@@ -17,41 +17,55 @@
 
 <body>
   <div class="container">
-    <div class="weather-app">
-      <form id="search-form">
-        <div class="row">
-          <div class="col-9">
-            <input id="city-input" class="form-control" type="search" autocomplete="off" placeholder="Type a city..">
-          </div>
-          <div class="col-3">
-            <input id="submit" type="submit" value="search" class="btn btn-primary w 100">
-          </div>
-        </div>
-      </form>
-      <h1 id="city"></h1>
-      <ul>
-        <li id="date">Tuesday 22:50</li>
-        <li id="description"></li>
-      </ul>
+    <form id="search-form">
       <div class="row">
-        <div class="col-6">
+        <div class="col-9">
+          <input id="city-input" class="form-control" type="search" autocomplete="off" placeholder="Type a city..">
+        </div>
+        <div class="col-3">
+          <input id="submit" type="submit" value="search" class="btn btn-primary w 100">
+        </div>
+      </div>
+    </form>
+    <h1 id="city"></h1>
+    <ul>
+      <li id="date">Tuesday 22:50</li>
+      <li id="description"></li>
+    </ul>
+    <div class="row">
+      <div class="col-6">
+        <strong id="temperature"></strong><span class="units"> <a id="celsius-link" href="#"> °C </a>| <a
+            id="fahrenheit-link" href="#"> °F</a></span>
+        <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" id="icon">
+      </div>
+      <div class="col-6">
+        <ul>
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+      </div>
+    </div>
+    <hr size="5px solid" color="white" background="none" />
+    <div class="weather-forecast">
+      <div class="weather-forecast-date">
+        <div class="row">
+          <div class="col-2">
+            <div class="date">Tue
+            </div>
 
-          <strong id="temperature"></strong><span class="units"> <a id="celsius-link" href="#"> °C </a>| <a
-              id="fahrenheit-link" href="#"> °F</a></span>
-          <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" id="icon">
+            <img src="http://openweathermap.org/img/wn/50n@2x.png" alt="weather icon" width="36px"><br />
+            <div class="weather-forecast-temperatures"></div>
+            <span class="weather-forecast-temperature-max">18°</span>
+            <span class="weather-forecast-temperature-min">12°</span>
+          </div>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
-        </div>
-        <small>
-          <a href="https://github.com/MargotGithub/My-one-and-only" target="_blank">Open-source code</a> by
-          Tyna</small>
       </div>
 
-      <script src="src/app.js"></script>
+    </div>
+    <small><a href="https://github.com/MargotGithub/My-one-and-only" target="_blank">Open source code</a> by
+      Tyna</small>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 
 </html>
