@@ -36,11 +36,11 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 6) {
       forecastHTML =
         forecastHTML +
         `<div class="col-2">
-            <div class="date">${formatDay(forecastDay.dt)}</div>${index}
+            <div class="date">${formatDay(forecastDay.dt)}</div>
 
             <img src="http://openweathermap.org/img/wn/${
               forecastDay.weather[0].icon
@@ -105,30 +105,8 @@ function search(city) {
 `;
   axios.get(apiUrl).then(displayTemperature);
 }
-function displayFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitConversion = Math.round((celsiusTemp * 9) / 5 + 32);
-
-  temperatureElement.innerHTML = fahrenheitConversion;
-}
-function displayCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsius);
 
 search("Prague");
