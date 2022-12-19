@@ -1,5 +1,9 @@
 h1 {
   color: white;
+  position: relative;
+  top: 10px;
+  right: -30px;
+
   font-family: "Asap", sans-serif;
   font-family: "Quicksand", sans-serif;
 }
@@ -11,8 +15,13 @@ li:first-letter {
 }
 .container {
   max-width: 600px;
-  padding: 20px;
   margin: 30px auto;
+  padding-top: 60px;
+  padding-bottom: 250px;
+}
+.weather-app {
+  color: white;
+  padding: 20px;
   border-radius: 10px;
   font-family: "Asap", sans-serif;
   font-family: "Quicksand", sans-serif;
@@ -24,9 +33,11 @@ li:first-letter {
 }
 .units {
   font-size: 15px;
+  position: relative;
+  top: -30px;
+  right: -30px;
 }
 .weather-forecast {
-  color: black;
   margin-top: 20px;
 }
 .weather-forecast-date {
@@ -39,20 +50,25 @@ li:first-letter {
   font-size: 18px;
   opacity: 0.5;
 }
-.link {
-  text-decoration: none;
-  color: white;
-  size: 12px;
+.signature {
+  margin: 0 auto;
+  text-align: center;
 }
 
+#submit {
+  background: rgb(184, 142, 252) 2.2%;
+  transition: all 200ms ease;
+  border: none;
+}
 #temperature {
-  font-size: 50px;
+  font-size: 70px;
+  position: relative;
+  top: 10px;
+  right: -25px;
 }
 
-#celsius-link {
-  text-decoration: none;
-}
-
-#fahrenheit-link {
-  text-decoration: none;
+#icon {
+  position: relative;
+  top: -10px;
+  right: -20px;
 }
