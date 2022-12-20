@@ -14,9 +14,9 @@
 }
 h1 {
   color: white;
-  position: relative;
   font-size: 90px;
   text-align: center;
+  position: relative;
   top: 60px;
   text-transform: uppercase;
 }
@@ -27,48 +27,62 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+.link {
+  color: #272628;
+}
 
 .units {
-  font-size: 20px;
+  font-size: 30px;
   position: relative;
-  top: -25px;
-  right: -30px;
+  top: -40px;
+  right: -40px;
 }
 .weather-forecast {
   margin-top: 20px;
-}
-.weather-forecast-date {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300px;
 }
 .weather-forecast-temperature-max {
   font-size: 18px;
 }
 .weather-forecast-temperature-min {
   font-size: 18px;
-  opacity: 0.5;
+  opacity: 0.9;
+  color: #eb6e4b;
 }
 .signature {
   position: relative;
   right: -355px;
   top: -30px;
+  color: #272628;
+}
+.conditions {
+  position: relative;
+  top: 80px;
+  left: 80px;
 }
 
 #submit {
-  background: rgb(184, 142, 252) 2.2%;
+  background: #eb6e4b;
   transition: all 200ms ease;
   border: none;
 }
+
+#submit:hover {
+  background: #272628;
+  opacity: 0.7;
+}
 #temperature {
-  font-size: 70px;
+  font-size: 120px;
   position: relative;
-  top: 10px;
-  right: -25px;
+  top: 20px;
+  right: -35px;
 }
 
 #icon {
   position: relative;
-  top: -10px;
-  right: -20px;
+  top: -20px;
+  left: 50%;
 }
 
 #date {
@@ -76,8 +90,17 @@ li:first-letter {
   position: relative;
   top: -50px;
   right: 25px;
+  color: #272628;
+  opacity: 0.7;
 }
 
 #city {
   font-size: 50px;
+}
+
+#description {
+  font-size: 30px;
+  position: absolute;
+  top: 28%;
+  left: 47%;
 }
